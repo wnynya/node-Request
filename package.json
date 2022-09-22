@@ -1,0 +1,12 @@
+{
+  "name": "@wany/request",
+  "version": "1.0.20",
+  "description": "@wany/request",
+  "author": "Wany <sung@wany.io> (https://wany.io)",
+  "main": "index.mjs",
+  "browser": "lib/browser/index.mjs",
+  "dependencies": {
+    "@wany/eventemitter": "^1.0.4",
+    "form-data": "^4.0.0"
+  }
+}
