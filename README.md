@@ -1,1 +1,3 @@
-# wany-modules-request
+# @wnynya/request
+
+**HTTP / HTTPS Request in nodejs.**
