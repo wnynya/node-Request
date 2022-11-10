@@ -52,6 +52,7 @@ class Request extends EventEmitter {
       method: this.method,
       headers: this.headers,
     };
+
     this.req = this.protocol
       .request(
         {
