@@ -1,6 +1,6 @@
 {
   "name": "@wnynya/request",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "@wnynya/request",
   "author": "Wany <sung@wany.io> (https://wany.io)",
   "main": "lib/index.js",

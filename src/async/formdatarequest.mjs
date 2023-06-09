@@ -11,7 +11,21 @@ async function FormDataRequest(uri, body, method, headers = {}) {
     for (const key in headers) {
       formHeaders[key] = headers[key];
     }
-    return URIRequest(uri, formData, method, formHeaders);
+    URIRequest(uri, formData, method, formHeaders)
+      .then((req) => {
+        try {
+          const json = JSON.parse(req.body);
+          req.body = json;
+        } catch (e) {}
+        resolve(req);
+      })
+      .catch((req) => {
+        try {
+          const json = JSON.parse(req.body);
+          req.body = json;
+        } catch (e) {}
+        reject(req);
+      });
   });
 }
 
